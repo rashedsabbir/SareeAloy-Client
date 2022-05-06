@@ -1,6 +1,6 @@
 import React from 'react';
 import useAuth from '../../../../hooks/useAuth/useAuth';
-// import About from '../About/About';
+import About from '../About/About';
 import Banner from '../Banner/Banner';
 // import Offering from '../Offering/Offering';
 // import TourGallery from '../TourGallery/TourGallery';
@@ -23,9 +23,10 @@ const Home = () => {
     return (
       <>
         <Banner></Banner>
+        <About></About>
         {/* <Offering></Offering>
         <TourGallery></TourGallery>
-        <About></About>
+        
         <TourReview></TourReview> */}
       </>
     );

@@ -13,7 +13,7 @@ const Header = () => {
         { name: 'Home', to: '/', current: true },
         { name: 'Inventories', to: '/offers', current: false },
         { name: 'Gallery', to: '/gallery', current: false },
-        { name: 'Blogs', to: '/about-us', current: false },
+        { name: 'Blogs', to: '/blog', current: false },
         { name: 'Contact Us', to: '/contact-us', current: false },
       ]
       

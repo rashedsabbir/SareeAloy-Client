@@ -1,7 +1,8 @@
 # SareeAloy 
 
 It is a warehouse management website. It is made with react-router and tailwind css. Website is deployed in firebase. Database is deployed in heroku. 
-Live link:(https://sareealoy.web.app).
+
+### Live link: https://sareealoy.web.app
 
 ## Features and Functionality
 

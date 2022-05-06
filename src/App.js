@@ -12,6 +12,7 @@ import Register from './component/Pages/Register/Register';
 import PrivateRoute from './component/Pages/PrivateRoute/PrivateRoute';
 import MyProfile from './component/Pages/MyProfile/MyProfile';
 import NewUser from './component/Pages/NewUser/NewUser';
+import UpdateProfile from './component/Pages/UpdateProfile/UpdateProfile';
 function App() {
   return (
     <div className="App">
@@ -36,6 +37,9 @@ function App() {
         </PrivateRoute>
         <PrivateRoute path="/my-profile">
           <MyProfile></MyProfile>
+        </PrivateRoute>
+        <PrivateRoute path="/update-profile">
+          <UpdateProfile></UpdateProfile>
         </PrivateRoute>
         <Route path="/blog">
            <Blog></Blog>

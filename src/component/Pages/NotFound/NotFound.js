@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import page404 from "../../../images/404/Image_0.png"
+import page404 from "../../../images/404/404.gif"
 const NotFound = () => {
     return (
         <div className="flex justify-center relative">

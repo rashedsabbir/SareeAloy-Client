@@ -54,7 +54,7 @@ const Footer = () => {
                    </ul>
                     </div>
                 <div className="">
-                   <h5 className="text-indigo-400 text-2xl mb-4">Saree Inventories</h5>
+                   <h5 className="text-indigo-400 text-2xl mb-4">Saree Brands</h5>
                    <ul className="space-y-2">
                        <li>Tangail</li>
                        <li>Indian</li>

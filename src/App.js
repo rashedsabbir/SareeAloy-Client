@@ -10,6 +10,8 @@ import NotFound from './component/Pages/NotFound/NotFound';
 import Login from './component/Pages/Login/Login';
 import Register from './component/Pages/Register/Register';
 import PrivateRoute from './component/Pages/PrivateRoute/PrivateRoute';
+import MyProfile from './component/Pages/MyProfile/MyProfile';
+import NewUser from './component/Pages/NewUser/NewUser';
 function App() {
   return (
     <div className="App">
@@ -29,6 +31,12 @@ function App() {
         <Route path="/login">
           <Login></Login>
         </Route>
+        <PrivateRoute path="/NewUser">
+          <NewUser></NewUser>
+        </PrivateRoute>
+        <PrivateRoute path="/my-profile">
+          <MyProfile></MyProfile>
+        </PrivateRoute>
         <Route path="/blog">
            <Blog></Blog>
         </Route>

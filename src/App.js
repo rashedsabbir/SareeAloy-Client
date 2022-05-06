@@ -9,6 +9,7 @@ import ContactUs from './component/Pages/ContactUs/ContactUs';
 import NotFound from './component/Pages/NotFound/NotFound';
 import Login from './component/Pages/Login/Login';
 import Register from './component/Pages/Register/Register';
+import PrivateRoute from './component/Pages/PrivateRoute/PrivateRoute';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,9 @@ function App() {
         <Route exact path="/">
           <Home></Home>
         </Route>
+        <PrivateRoute exact path="/home">
+          <Home></Home>
+        </PrivateRoute>
         <Route path="/register">
           <Register></Register>
         </Route>

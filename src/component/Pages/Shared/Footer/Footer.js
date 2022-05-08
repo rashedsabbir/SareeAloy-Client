@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faInstagramSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
+
 const Footer = () => {
     const phoneFont=<FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon>
     const inboxFont=<FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
@@ -42,7 +43,7 @@ const Footer = () => {
                        <li><Link className="hover:border-red-500 border-b-2" to="/offers">
                            Inventories
                        </Link></li>
-                       <li><Link className="hover:border-red-500 border-b-2"  to="/gallery">
+                       <li><Link className="hover:border-red-500 border-b-2"  to="gallery">
                            Gallery
                        </Link></li>
                        <li> <Link className="hover:border-red-500 border-b-2" to="/blog">

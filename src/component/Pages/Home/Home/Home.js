@@ -2,10 +2,12 @@ import React from 'react';
 import useAuth from '../../../../hooks/useAuth/useAuth';
 import About from '../About/About';
 import Banner from '../Banner/Banner';
+
 // import Offering from '../Offering/Offering';
 // import TourGallery from '../TourGallery/TourGallery';
 // import TourReview from '../TourReview/TourReview';
 import {TailSpin} from "react-loader-spinner";
+import GalleryPage from '../GalleryPage/GalleryPage';
 
 const Home = () => {
   const {isLoading}=useAuth()
@@ -23,11 +25,9 @@ const Home = () => {
     return (
       <>
         <Banner></Banner>
+        <GalleryPage></GalleryPage>
         <About></About>
-        {/* <Offering></Offering>
-        <TourGallery></TourGallery>
         
-        <TourReview></TourReview> */}
       </>
     );
 };

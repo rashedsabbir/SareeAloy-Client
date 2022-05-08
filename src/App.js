@@ -13,6 +13,7 @@ import PrivateRoute from './component/Pages/PrivateRoute/PrivateRoute';
 import MyProfile from './component/Pages/MyProfile/MyProfile';
 import NewUser from './component/Pages/NewUser/NewUser';
 import UpdateProfile from './component/Pages/UpdateProfile/UpdateProfile';
+import GalleryPage from './component/Pages/Home/GalleryPage/GalleryPage';
 function App() {
   return (
     <div className="App">
@@ -41,6 +42,9 @@ function App() {
         <PrivateRoute path="/update-profile">
           <UpdateProfile></UpdateProfile>
         </PrivateRoute>
+        <Route  path="/gallery">
+          <GalleryPage></GalleryPage>
+        </Route>
         <Route path="/blog">
            <Blog></Blog>
         </Route>

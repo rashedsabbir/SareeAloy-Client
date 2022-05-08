@@ -14,6 +14,7 @@ import MyProfile from './component/Pages/MyProfile/MyProfile';
 import NewUser from './component/Pages/NewUser/NewUser';
 import UpdateProfile from './component/Pages/UpdateProfile/UpdateProfile';
 import GalleryPage from './component/Pages/Home/GalleryPage/GalleryPage';
+import AddAnItem from './component/Pages/AddAnItem/AddAnItem';
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,9 @@ function App() {
         <Route path="/login">
           <Login></Login>
         </Route>
+        <PrivateRoute exact path="/add-item">
+          <AddAnItem></AddAnItem>
+        </PrivateRoute>
         <PrivateRoute path="/NewUser">
           <NewUser></NewUser>
         </PrivateRoute>

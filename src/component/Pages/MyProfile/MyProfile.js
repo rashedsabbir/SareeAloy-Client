@@ -18,12 +18,12 @@ const MyProfile = () => {
     <button>My Items</button>
 </Link>
 <Link to="/manage-items" className="hover:bg-indigo-700 p-2 block">
-    <button>Manage Items</button>
+    <button>Manage all Items</button>
 </Link>
 <Link to="/add-services" className="hover:bg-indigo-700 p-2 block">
     <button>Add Items</button>
 </Link>
-<button onClick={logOut} className="hover:bg-indigo-700 p-2 w-full border-t-2 border-indigo-700 text-left" >Log Out</button>
+<button onClick={logOut} className="hover:bg-indigo-700 p-2 w-full border-t-2 border-indigo-700 text-left" >Sign Out</button>
     </div>
             <div className="lg:w-3/4 bg-gray-900 ">
             <h2 className="text-3xl mb-8 p-4 bg-gray-800 bg-opacity-80 text-red-500">| My Profile</h2>

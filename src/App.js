@@ -20,6 +20,7 @@ import Delivered from './component/Pages/Delivered/Delivered';
 
 import ManageAllItems from './component/Pages/ManageAllItems/ManageAllItems';
 import MyItem from './component/Pages/MyItem/MyItem';
+import AddItem from './component/Pages/AddItem/AddItem';
 
 
 function App() {
@@ -62,6 +63,9 @@ function App() {
         </PrivateRoute>
         <PrivateRoute path="/my-order">
           <MyItem></MyItem>
+        </PrivateRoute>
+        <PrivateRoute path="/add-services">
+          <AddItem></AddItem>
         </PrivateRoute>
         <PrivateRoute path="/manage-items">
           <ManageAllItems></ManageAllItems>

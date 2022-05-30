@@ -22,7 +22,7 @@ const InventoryId = () => {
     const messageRef=useRef()
     
     useEffect(()=>{
-        const url=`http://localhost:5000/offers/${id}`
+        const url=`https://lit-fjord-77387.herokuapp.com/offers/${id}`
 fetch(url)
 .then(res=>res.json())
 .then(data=>setOffer(data))
@@ -39,7 +39,7 @@ const message=messageRef.current.value
         const book={
 name,email,phone,date,message,packageBook,photo,status:"Pending"
         }
-        fetch(`http://localhost:5000/booking`,{
+        fetch(`https://lit-fjord-77387.herokuapp.com/booking`,{
             method:"POST",
             headers:{
                 "content-type":"application/json"
@@ -142,7 +142,7 @@ e.preventDefault()
                 <input className="p-4 w-full border-2 border-gray-200  rounded-md block" type="text" name="" id="" placeholder="Your Full Name" />
                 <input type="email" className="p-4 w-full border-2 border-gray-200 rounded-md block" name="" id="" placeholder="Your Email" />
                 </div>
-                <input type="text" className="p-4 w-full border-2 border-gray-200  rounded-md block" name="" id="" placeholder="Tour Type" />
+                
                 <textarea name="" className="p-4 w-full border-2 border-gray-200 rounded-md block" id="" cols="30" placeholder="Your Message" rows="10"></textarea>
             
                 <br />

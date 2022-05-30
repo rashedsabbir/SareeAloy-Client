@@ -4,7 +4,7 @@ import GalleryPhoto from '../GalleryPhoto/GalleryPhoto';
 const GalleryPage = () => {
     const [gallery,setGallery]=useState([])
     useEffect(()=>{
-        fetch("http://localhost:5000/gallery")
+        fetch("https://lit-fjord-77387.herokuapp.com/gallery")
         .then(res=>res.json())
         .then(data=>setGallery(data))
     },[])

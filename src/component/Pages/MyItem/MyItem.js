@@ -6,7 +6,7 @@ const MyItem = () => {
     const [orders,setOrders]=useState([])
     console.log(orders)
     useEffect(()=>{
-        fetch(`http://localhost:5000/myorder/${user.email}`)
+        fetch(`https://lit-fjord-77387.herokuapp.com/myorder/${user.email}`)
         .then(res=>res.json())
         .then(data=>setOrders(data))
     },[])
@@ -26,7 +26,7 @@ const MyItem = () => {
     <button>Manage all items</button>
 </Link>
 <Link to="/add-services" className="hover:bg-indigo-700 p-2 block">
-    <button>Add Services</button>
+    <button>Add Item</button>
 </Link>
 <button onClick={logOut} className="hover:bg-indigo-700 p-2 w-full border-t-2 border-indigo-700 text-left" >Sign Out</button>
     </div>

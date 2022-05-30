@@ -5,7 +5,7 @@ const useOrder = () => {
     
 
     useEffect(()=>{
-        fetch("http://localhost:5000/booking")
+        fetch("https://lit-fjord-77387.herokuapp.com/booking")
         .then(res=>res.json())
         .then(data=>{
             setOrders(data)

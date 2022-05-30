@@ -11,7 +11,7 @@ const InventoryPage = () => {
     const [pageCount,setPageCount]=useState(0)
     const size=6;
     useEffect(()=>{
-        fetch(`http://localhost:5000/offers?page=${page}&&size=${size}`)
+        fetch(`https://lit-fjord-77387.herokuapp.com/offers?page=${page}&&size=${size}`)
         .then(res=>res.json())
         .then(data=>{
             setOffers(data.offer)
@@ -47,7 +47,7 @@ const InventoryPage = () => {
 
 </div>
 <div>
-          <Link className="hover:border-red-500 border-b-2" to="/inventory">
+          <Link className="hover:border-red-500 border-b-2" to="/manage-items">
 <button className="text-white bg-blue-900 rounded-sm w-auto py-3 px-8">Manage Inventories</button>
                        </Link>
           </div>

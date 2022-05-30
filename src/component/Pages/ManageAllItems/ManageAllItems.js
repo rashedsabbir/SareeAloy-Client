@@ -3,13 +3,13 @@ import {Link} from "react-router-dom"
 import useAuth from "../../../hooks/useAuth/useAuth"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-const ManageAllOrders = () => {
+const ManageAllItems = () => {
     const {logOut}=useAuth()
     const [orders,setOrders]=useState([])
     // const [status,setStatus]=useState('Pending')
     console.log(orders)
     useEffect(()=>{
-        fetch("http://localhost:5000/booking")
+        fetch("https://lit-fjord-77387.herokuapp.com/booking")
         .then(res=>res.json())
         .then(data=>{
           
@@ -19,7 +19,7 @@ const ManageAllOrders = () => {
     },[])
   
     const clickDelete=id=>{
-        fetch(`http://localhost:5000/booking/${id}`,{
+        fetch(`https://lit-fjord-77387.herokuapp.com/booking/${id}`,{
             method:"DELETE",
         })
        .then(response=>response.json())
@@ -36,7 +36,7 @@ const ManageAllOrders = () => {
 
 const clickApproved=(id)=>{
     const updateStatus={status:"Approved"}
-    fetch(`http://localhost:5000/booking/${id}`,{
+    fetch(`https://lit-fjord-77387.herokuapp.com/booking/${id}`,{
         method:"PUT",
         headers:{
             "content-type":"application/json"
@@ -63,13 +63,13 @@ const clickApproved=(id)=>{
     <button>My Profile</button>
 </Link>
 <Link to="/my-order" className="hover:bg-indigo-700 p-2 block">
-    <button>My Order</button>
+    <button>My Item</button>
 </Link>
 <Link to="/manage-items" className="hover:bg-indigo-700 p-2 block">
     <button>Manage all items</button>
 </Link>
 <Link to="/add-services" className="hover:bg-indigo-700 p-2 block">
-    <button>Add Services</button>
+    <button>Add Item</button>
 </Link>
 <button onClick={logOut} className="hover:bg-indigo-700 p-2 w-full border-t-2 border-indigo-700 text-left" >Sign Out</button>
     </div>
@@ -113,4 +113,4 @@ const clickApproved=(id)=>{
     );
 };
 
-export default ManageAllOrders;
+export default ManageAllItems;

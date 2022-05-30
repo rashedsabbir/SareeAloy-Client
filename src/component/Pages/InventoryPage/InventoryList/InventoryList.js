@@ -28,7 +28,7 @@ history.push(`/inventory/${id}`)
           <div className='flex justify-between my-4'>
           <p className="text-green-900 font-semibold text-sm">Quantity: {groupSize}</p>
           </div>
-          <button onClick={()=>handleClicked(offer._id)} className="text-white bg-blue-900 rounded-sm w-full py-3 px-8">Book Now</button>
+          <button onClick={()=>handleClicked(offer._id)} className="text-white bg-blue-900 rounded-sm w-full py-3 px-8">Stock update</button>
           </div>
           
         </div>

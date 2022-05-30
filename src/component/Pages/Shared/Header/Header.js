@@ -11,7 +11,7 @@ const Header = () => {
     const {user,logOut}=useAuth()
     const navigation = [
         { name: 'Home', to: '/', current: true },
-        { name: 'Inventories', to: '/offers', current: false },
+        { name: 'Inventories', to: '/inventory', current: false },
         { name: 'Gallery', to: '/gallery', current: false },
         { name: 'Blogs', to: '/blog', current: false },
         { name: 'Contact Us', to: '/contact-us', current: false },

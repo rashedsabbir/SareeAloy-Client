@@ -3,11 +3,11 @@ import React from 'react';
 import { useHistory } from 'react-router';
 
 const Inventory = ({offer}) => {
-    const {title,photo,price,introduction,duration,peopleRating}=offer
+    const {title,photo,price,introduction,duration,groupSize}=offer
     console.log(offer)
     const history=useHistory()
     const handleClicked=id=>{
-history.push(`/offers/${id}`)
+history.push(`/inventory/${id}`)
     }
     return (
         <div className="hover:bg-gray-200 transition-colors shadow-xl">
@@ -24,7 +24,7 @@ history.push(`/offers/${id}`)
           <p className="text-blue-900 text-sm font-medium truncate">{introduction}</p>
           </div>
           <div className='flex justify-between my-4'>
-          <p className="text-green-900 font-semibold text-sm">Quantity: {peopleRating}</p><br />
+          <p className="text-green-900 font-semibold text-sm">Quantity: {groupSize}</p><br />
           </div>
           <button onClick={()=>handleClicked(offer._id)} className="text-white bg-blue-900 rounded-sm w-full py-3 px-8">Stock Update</button>
           </div>

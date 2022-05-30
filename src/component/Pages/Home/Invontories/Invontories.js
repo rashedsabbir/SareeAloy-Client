@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Inventory from '../Inventory/Inventory';
-import { useHistory } from 'react-router';
+
 import { Link } from 'react-router-dom';
 
 const Inventories = () => {
@@ -11,10 +11,7 @@ const Inventories = () => {
         .then(data=>setOffers(data.offer))
     },[])
 
-    const history=useHistory()
-    const handleClicked=id=>{
-        history.push(`/inventory`)
-            }
+    
     return (
         <div>
            <div className="lg:p-16 md:p-8 p-8">

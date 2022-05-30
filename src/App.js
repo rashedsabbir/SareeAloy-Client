@@ -16,6 +16,10 @@ import UpdateProfile from './component/Pages/UpdateProfile/UpdateProfile';
 import GalleryPage from './component/Pages/Home/GalleryPage/GalleryPage';
 import InventoryPage from './component/Pages/InventoryPage/InventoryPage/InventoryPage';
 import InventoryId from './component/Pages/InventoryPage/InventoryId/InventoryId';
+import Delivered from './component/Pages/Delivered/Delivered';
+
+import ManageAllItems from './component/Pages/ManageAllItems/ManageAllItems';
+import MyItem from './component/Pages/MyItem/MyItem';
 
 
 function App() {
@@ -41,6 +45,9 @@ function App() {
           <InventoryPage></InventoryPage>
         </Route>
         
+        <PrivateRoute path="/booking-complete">
+          <Delivered></Delivered>
+        </PrivateRoute>
         <PrivateRoute path="/inventory/:id">
           <InventoryId></InventoryId>
         </PrivateRoute>
@@ -52,6 +59,12 @@ function App() {
         </PrivateRoute>
         <PrivateRoute path="/update-profile">
           <UpdateProfile></UpdateProfile>
+        </PrivateRoute>
+        <PrivateRoute path="/my-order">
+          <MyItem></MyItem>
+        </PrivateRoute>
+        <PrivateRoute path="/manage-items">
+          <ManageAllItems></ManageAllItems>
         </PrivateRoute>
         <Route  path="/gallery">
           <GalleryPage></GalleryPage>

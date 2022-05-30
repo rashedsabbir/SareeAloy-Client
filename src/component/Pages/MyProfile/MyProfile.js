@@ -17,7 +17,7 @@ const MyProfile = () => {
 <Link to="/my-order" className="hover:bg-indigo-700 p-2 block">
     <button>My Items</button>
 </Link>
-<Link to="/manage-orders" className="hover:bg-indigo-700 p-2 block">
+<Link to="/manage-items" className="hover:bg-indigo-700 p-2 block">
     <button>Manage Items</button>
 </Link>
 <Link to="/add-services" className="hover:bg-indigo-700 p-2 block">

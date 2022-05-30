@@ -3,7 +3,7 @@ import {  faCheckCircle, faInfo,   faTimesCircle } from '@fortawesome/free-solid
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useRef, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
-import {Rating } from 'react-simple-star-rating'
+
 
 import useAuth from '../../../../hooks/useAuth/useAuth';
 
@@ -20,8 +20,7 @@ const InventoryId = () => {
     const phoneRef=useRef()
     const dateRef=useRef()
     const messageRef=useRef()
-    const personRef=useRef()
-    const childrenRef=useRef()
+    
     useEffect(()=>{
         const url=`http://localhost:5000/offers/${id}`
 fetch(url)
@@ -50,7 +49,7 @@ name,email,phone,date,message,packageBook,photo,status:"Pending"
         .then(res=>res.json())
         .then(data=>{
             if(data.acknowledged===true){
-                history.push("/booking-complete")
+                history.push("/delivered")
             }
         })
         nameRef.current.value=""

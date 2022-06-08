@@ -18,7 +18,7 @@ const Inventories = () => {
            <h4 className="text-xl text-pink-500 font-medium my-2">Choose Your Items</h4>
             <h1 className="text-4xl text-blue-900 font-medium">Select Your Items <br /> For Your Inventory</h1>
            </div>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-4 p-8">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-4 p-8">
                 {
                     offers.map(offer=><Inventory key={offer._id} offer={offer}></Inventory>).slice(0,6)
                 }
